@@ -1,0 +1,20 @@
+{
+  "image_index": {
+    "type": "HNSW",
+    "dimension": 512,
+    "num_vectors": 1213,
+    "M": 16,
+    "efConstruction": 200,
+    "build_time": 0.1437211036682129,
+    "file": "image_hnsw_index.faiss"
+  },
+  "text_index": {
+    "type": "HNSW",
+    "dimension": 512,
+    "num_vectors": 6065,
+    "M": 16,
+    "efConstruction": 200,
+    "build_time": 1.3078527450561523,
+    "file": "text_hnsw_index.faiss"
+  }
+}

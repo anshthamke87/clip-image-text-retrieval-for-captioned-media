@@ -1,5 +1,5 @@
 {
-  "phase_completed": "zero_shot_baseline",
+  "phase_completed": "faiss_indexing",
   "dataset": "flickr8k_grouped_corrected",
   "total_unique_images": 8091,
   "total_captions": 40455,
@@ -18,10 +18,16 @@
     }
   },
   "project_root": "/content/drive/MyDrive/clip_image_text_retrieval",
-  "next_phase": "faiss_indexing",
+  "next_phase": "fine_tuning",
   "baseline_results": {
     "val_text_to_image_recall_1": 0.4829348722176422,
     "test_text_to_image_recall_1": 0.5074897119341564
   },
-  "embeddings_saved": true
+  "embeddings_saved": true,
+  "faiss_results": {
+    "test_text_to_image_recall_1": 0.5073251028806585,
+    "test_image_to_text_recall_1": 0.7004115226337448,
+    "avg_query_time_ms": 0.11761845875178836
+  },
+  "indexes_built": true
 }
