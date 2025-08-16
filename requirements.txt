@@ -1,0 +1,10 @@
+faiss-cpu
+open-clip-torch 
+datasets 
+torch 
+torchvision
+fastapi 
+uvicorn 
+python-multipart 
+aiofiles 
+pydantic
