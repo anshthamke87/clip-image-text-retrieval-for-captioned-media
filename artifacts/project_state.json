@@ -1,0 +1,22 @@
+{
+  "phase_completed": "data_preparation_fixed",
+  "dataset": "flickr8k_grouped_corrected",
+  "total_unique_images": 8091,
+  "total_captions": 40455,
+  "splits": {
+    "train": {
+      "images": 5663,
+      "captions": 28315
+    },
+    "val": {
+      "images": 1213,
+      "captions": 6065
+    },
+    "test": {
+      "images": 1215,
+      "captions": 6075
+    }
+  },
+  "project_root": "/content/drive/MyDrive/clip_image_text_retrieval",
+  "next_phase": "zero_shot_baseline"
+}
