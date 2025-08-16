@@ -1,0 +1,51 @@
+{
+  "model": "OpenCLIP ViT-B-32 (openai)",
+  "dataset": "Flickr8k",
+  "evaluation_date": "2025-08-16T00:37:49.434097",
+  "validation_results": {
+    "text_to_image": {
+      "Recall@1": 0.4829348722176422,
+      "Recall@5": 0.7591096455070074,
+      "Recall@10": 0.8474855729596042,
+      "Median_Rank": 2.0,
+      "Mean_Rank": 8.487386644682605
+    },
+    "image_to_text": {
+      "Recall@1": 0.6677658697444353,
+      "Recall@5": 0.8920032976092334,
+      "Recall@10": 0.9414674361088211,
+      "Median_Rank": 1.0,
+      "Mean_Rank": 3.107996702390767
+    },
+    "num_queries": {
+      "text_queries": 6065,
+      "image_queries": 1213
+    }
+  },
+  "test_results": {
+    "text_to_image": {
+      "Recall@1": 0.5074897119341564,
+      "Recall@5": 0.7688888888888888,
+      "Recall@10": 0.8584362139917695,
+      "Median_Rank": 1.0,
+      "Mean_Rank": 7.509794238683128
+    },
+    "image_to_text": {
+      "Recall@1": 0.7004115226337448,
+      "Recall@5": 0.891358024691358,
+      "Recall@10": 0.9489711934156378,
+      "Median_Rank": 1.0,
+      "Mean_Rank": 3.1613168724279834
+    },
+    "num_queries": {
+      "text_queries": 6075,
+      "image_queries": 1215
+    }
+  },
+  "model_config": {
+    "model_name": "ViT-B-32",
+    "pretrained": "openai",
+    "device": "cuda",
+    "total_params": 151277313
+  }
+}

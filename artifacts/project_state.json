@@ -1,5 +1,5 @@
 {
-  "phase_completed": "data_preparation_fixed",
+  "phase_completed": "zero_shot_baseline",
   "dataset": "flickr8k_grouped_corrected",
   "total_unique_images": 8091,
   "total_captions": 40455,
@@ -18,5 +18,10 @@
     }
   },
   "project_root": "/content/drive/MyDrive/clip_image_text_retrieval",
-  "next_phase": "zero_shot_baseline"
+  "next_phase": "faiss_indexing",
+  "baseline_results": {
+    "val_text_to_image_recall_1": 0.4829348722176422,
+    "test_text_to_image_recall_1": 0.5074897119341564
+  },
+  "embeddings_saved": true
 }
