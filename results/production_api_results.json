@@ -1,0 +1,30 @@
+{
+  "api_version": "1.0.0",
+  "model_deployed": "OpenCLIP ViT-B-32 Baseline",
+  "model_performance": {
+    "text_to_image_recall_1": 0.507,
+    "image_to_text_recall_1": 0.7,
+    "query_speed_ms": 0.1
+  },
+  "endpoints": [
+    "GET /",
+    "GET /health",
+    "GET /stats",
+    "POST /search/images",
+    "POST /search/text",
+    "POST /encode/text",
+    "POST /encode/image",
+    "POST /cache/clear"
+  ],
+  "features": [
+    "Sub-millisecond search with FAISS HNSW",
+    "Request validation with Pydantic",
+    "Query result caching",
+    "Health monitoring",
+    "Usage statistics",
+    "Error handling and logging",
+    "Docker deployment ready"
+  ],
+  "deployment_ready": true,
+  "development_date": "2025-08-16T03:13:50.213870"
+}

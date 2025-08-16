@@ -1,0 +1,20 @@
+{
+  "model": {
+    "name": "ViT-B-32",
+    "pretrained": "openai",
+    "performance": {
+      "text_to_image_recall_1": 0.507,
+      "image_to_text_recall_1": 0.700,
+      "query_speed_ms": 0.1
+    }
+  },
+  "faiss": {
+    "image_index_path": "../artifacts/indexes/image_hnsw_index.faiss",
+    "text_index_path": "../artifacts/indexes/text_hnsw_index.faiss"
+  },
+  "api": {
+    "max_results": 50,
+    "cache_size": 1000,
+    "timeout_seconds": 30
+  }
+}

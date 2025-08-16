@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  clip-api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../artifacts:/app/artifacts:ro
+      - ../data:/app/data:ro
+    environment:
+      - MODEL_PATH=/app/artifacts/models
+      - INDEX_PATH=/app/artifacts/indexes
+      - EMBEDDINGS_PATH=/app/artifacts/embeddings
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
