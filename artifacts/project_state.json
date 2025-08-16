@@ -1,5 +1,5 @@
 {
-  "phase_completed": "faiss_indexing",
+  "phase_completed": "fine_tuning_attempted",
   "dataset": "flickr8k_grouped_corrected",
   "total_unique_images": 8091,
   "total_captions": 40455,
@@ -18,7 +18,7 @@
     }
   },
   "project_root": "/content/drive/MyDrive/clip_image_text_retrieval",
-  "next_phase": "fine_tuning",
+  "next_phase": "production_api",
   "baseline_results": {
     "val_text_to_image_recall_1": 0.4829348722176422,
     "test_text_to_image_recall_1": 0.5074897119341564
@@ -29,5 +29,32 @@
     "test_image_to_text_recall_1": 0.7004115226337448,
     "avg_query_time_ms": 0.11761845875178836
   },
-  "indexes_built": true
+  "indexes_built": true,
+  "final_model_choice": "baseline",
+  "fine_tuning_results": {
+    "attempts": 2,
+    "success": false,
+    "final_performance": {
+      "text_to_image": {
+        "Recall@1": 0.5074897119341564,
+        "Recall@5": 0.7688888888888888,
+        "Recall@10": 0.8584362139917695,
+        "Median_Rank": 1.0,
+        "Mean_Rank": 7.509794238683128
+      },
+      "image_to_text": {
+        "Recall@1": 0.7004115226337448,
+        "Recall@5": 0.891358024691358,
+        "Recall@10": 0.9489711934156378,
+        "Median_Rank": 1.0,
+        "Mean_Rank": 3.1613168724279834
+      },
+      "num_queries": {
+        "text_queries": 6075,
+        "image_queries": 1215
+      }
+    },
+    "recommendation": "Use baseline model"
+  },
+  "model_saved": true
 }

@@ -1,0 +1,13 @@
+# Large model files
+artifacts/models/*.pt
+artifacts/models/*.pth
+*.pt
+*.pth
+
+# Large embedding files
+artifacts/embeddings/*.pkl
+*.pkl
+
+# Large image datasets
+data/images/
+data/raw/
